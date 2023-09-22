@@ -50,7 +50,7 @@ LOCAL_SHARED_LIBRARIES := \
     android.hardware.wifi@1.3 \
     android.hardware.wifi@1.4 \
     android.hardware.wifi@1.5 \
-	android.hardware.wifi@1.6
+    android.hardware.wifi@1.6
 
 LOCAL_STATIC_LIBRARIES := android.hardware.wifi@1.0-service-lib
 
