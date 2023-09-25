@@ -371,7 +371,7 @@ PRODUCT_PACKAGES += \
     WifiOverlayRosemary
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay-pb
+    $(DEVICE_PATH)/overlay-aosp
 
 # Overridden props
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true

@@ -1,2 +1,6 @@
 # Inherit device specific props
 import /product/${ro.boot.product.vendor.sku}.build.prop
+
+# Project-Elixir Stuff
+ro.elixir.maintainer=User132New
+org.elixir.device=Redmi Note 10S/11SE(rosemary/secret)
