@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/redmi/rosemary/rosemary-vendor.mk)
-
+$(call inherit-product-if-exists, vendor/redmi/rosemary-miuicamera/miuicamera.mk)
 $(call inherit-product, vendor/mediatek/opensource/mtk-builds.mk)
 
 # Setup dalvik vm configs
@@ -91,7 +91,8 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session \
     libldacBT_enc \
     libldacBT_abr \
-    vendor.mediatek.hardware.audio@6.1.vendor
+    vendor.mediatek.hardware.audio@6.1.vendor \
+    vendor.mediatek.hardware.bluetooth.audio@2.1.vendor
 
 PRODUCT_PACKAGES += \
     MtkInCallService
@@ -309,6 +310,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service.vendor \
     libmedia_codeclist \
     libstagefright_codecbase \
     libstagefright_bufferpool@2.0.1 \
@@ -524,6 +526,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0.vendor \
     android.hardware.thermal@2.0.vendor
 
 # USB
