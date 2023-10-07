@@ -1,2 +1,3 @@
 # Inherit device specific props
 import /product/${ro.boot.product.vendor.sku}.build.prop
+ro.spark.maintainer=Rahul-User132New

@@ -29,6 +29,12 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_USES_AOSP_RECOVERY := true
 
+# Included Gapps by default.
+WITH_GAPPS := true
+
+#Face Unlock.
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Kasumi's GCam GO
 GCGOP_VENDOR_DIR ?= vendor/gcgop
 $(call inherit-product-if-exists, $(GCGOP_VENDOR_DIR)/config.mk)
